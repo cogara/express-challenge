@@ -78,6 +78,9 @@ h2 {
   height: 40px;
   display: block;
   font-size: 0;
+  position: relative;
+  left: 100px;
+  top: 50px;
 }
 
 #balance.large {
