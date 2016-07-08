@@ -7,7 +7,7 @@ var modThree = require('../modules/modThree.js');
 
 
 var app = express();
-var port = 3100;
+var port = process.env.PORT || 3100;
 
 app.use(express.static('public'));
 
