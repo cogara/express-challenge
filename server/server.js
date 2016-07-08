@@ -16,6 +16,7 @@ app.get('/balance',function(request, response) {
 });
 
 app.get('/times', function(request, response) {
+  response.send('test');
   console.log(process.env.TIMES);
 })
 
