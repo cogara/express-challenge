@@ -5,7 +5,7 @@ var modOne = require('../modules/modOne.js');
 var modTwo = require('../modules/modTwo.js');
 var modThree = require('../modules/modThree.js');
 
-
+var times = process.env.TIMES || '5';
 var app = express();
 var port = process.env.PORT || 3100;
 
@@ -16,7 +16,8 @@ app.get('/balance',function(request, response) {
 });
 
 app.get('/times', function(request, response) {
-  response.send(process.env.TIMES);
+
+  response.send(times);
 })
 
 var server = app.listen(port, function(){
