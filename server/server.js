@@ -15,6 +15,10 @@ app.get('/balance',function(request, response) {
   response.send(modThree.randomToCurrency(100,1000000));
 });
 
+app.get('/times', function(request, response) {
+  console.log(process.env.TIMES);
+})
+
 var server = app.listen(port, function(){
   var port = server.address().port;
   console.log('---Control+C to Stop---\n', 'Listening on Port:', port);
